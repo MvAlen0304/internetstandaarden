@@ -1,3 +1,6 @@
+/* https://github.com/MvAlen0304/internetstandaarden */
+
+
 body {
     margin: 0;
     padding: 0;
@@ -14,19 +17,15 @@ ul {
     padding: 0;
     position: fixed;
     top: 0;
-    list-style-type: none;
     overflow: hidden;
     background-color: white;
     width: 100%;
+    z-index: 10;
    }
 
 li {
     display: inline;
     float: left;
-}
-
-li:last-child {
-    border-right: none;
 }
 
 li a {
@@ -56,12 +55,16 @@ img {
     width: 100%;
 }
 
+main {
+    margin-top: 3em;
+}
+
 p {
     font-weight:normal;
     font-style:normal;
     }
 
-section {
+.alles {
     background: #e6eff3;
     color: black;
     height: 100%;
@@ -70,4 +73,54 @@ section {
     align-items: center;
     position: relative;
     left: 14%;
+}
+
+footer {
+    text-align: center;
+}
+
+.blokje {
+    position: absolute;
+    width: 40%;
+    margin-top: 10%;
+    background-color: white;
+    margin-left: 3%;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.blokje2 {
+    position: absolute;
+    width: 40%;
+    margin-top: 10%;
+    background-color: white;
+    margin-left: 50%;
+    padding: 1em;
+    border-radius: 1em;
+}
+
+/* code mede mogelijk gemaakt door Sander */
+
+.moeite {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .blokje {
+        display: none;
+    }
+
+    .blokje2 {
+        display: none;
+    }
+
+    .moeite {
+        display: initial;
+    }
+}
+
+@media (max-width: 605px){
+    img {
+        margin-top: 17%;
+    }
 }
